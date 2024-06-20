@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menú Le Munir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .main-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background: #333;
+            overflow: hidden;
+        }
+
+        .main-menu > ul > li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .main-menu > ul > li > a:hover {
+            background: #555;
+        }
+
+        .main-menu .dropdown {
+            display: none;
+            position: absolute;
+            background: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .main-menu li:hover > .dropdown {
+            display: block;
+        }
+
+        .main-menu .dropdown ul {
+            display: block;
+        }
+
+        .main-menu .dropdown li {
+            display: block;
+        }
+
+        .main-menu .dropdown a {
+            padding: 10px 15px;
+            color: #333;
+            background: #fff;
+        }
+
+        .main-menu .dropdown a:hover {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="main-menu">
+    <ul>
+        <li><a href="#">Nuevo (recién llegado)</a>
+            <ul class="dropdown">
+                <li><a href="#">Prendas Nuevas</a></li>
+                <li><a href="#">Calzado Nuevo</a></li>
+                <li><a href="#">Accesorios Nuevos</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Prendas</a>
+            <ul class="dropdown">
+                <li><a href="#">Vestidos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">VESTIDO PIDIE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tops</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Blusas</a>
+                            <ul class="dropdown">
+                                <li><a href="#">BLUSA BLANCA CUELLO TRIANGULO</a></li>
+                                <li><a href="#">BLUSA CARTER</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Jerséis y Sudaderas</a></li>
+                <li><a href="#">Chaquetas y Abrigos</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Faldas</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Calzado</a>
+            <ul class="dropdown">
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Botas</a></li>
+                <li><a href="#">Sandalias</a>
+                    <ul class="dropdown">
+                        <li><a href="#">SANDALIA TEA BEIGE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zapatos de Tacón</a></li>
+                <li><a href="#">Botines</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Accesorios</a>
+            <ul class="dropdown">
+                <li><a href="#">Bolsos</a></li>
+                <li><a href="#">Bufandas y Pañuelos</a></li>
+                <li><a href="#">Sombreros y Gorros</a></li>
+                <li><a href="#">Guantes</a></li>
+                <li><a href="#">Joyas y Bisutería</a></li>
+                <li><a href="#">Gafas de Sol</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Ofertas</a>
+            <ul class="dropdown">
+                <li><a href="#">Prendas en Oferta</a></li>
+                <li><a href="#">Calzado en Oferta</a></li>
+                <li><a href="#">Accesorios en Oferta</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Inspiración</a>
+            <ul class="dropdown">
+                <li><a href="#">Looks de Temporada</a></li>
+                <li><a href="#">Inspiración para Eventos</a></li>
+                <li><a href="#">Estilo Urbano</a></li>
+                <li><a href="#">Elegancia</a></li>
+                <li><a href="#">Casual</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Temporada</a>
+            <ul class="dropdown">
+                <li><a href="#">Primavera/Verano</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Prendas Primavera/Verano</a></li>
+                        <li><a href="#">Calzado Primavera/Verano</a></li>
+                        <li><a href="#">Accesorios Primavera/Verano</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Otoño/Invierno</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Prendas Otoño/Invierno</a></li>
+                        <li><a href="#">Calzado Otoño/Invierno</a></li>
+                        <li><a href="#">Accesorios Otoño/Invierno</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
